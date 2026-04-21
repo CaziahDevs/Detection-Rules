@@ -15,9 +15,10 @@ Rules are organized by tactic and include documentation covering:
 ## Rules Index
 | Rule | Tactic | Severity |
 |------|--------|----------|
-| [Suspicious LSASS Access](rules/credential-access/suspicious_lsass_access.yml) | Credential Access | Medium |
-| [After-Hours Brute Force with Scheduled Task](rules/correlated/after_hours_brute_force_scheduled_task.yml) | Credential Access, Persistence, Defense Evasion | High |
-
+| [Suspicious LSASS Access](rules/credential-access/suspicious-lsass-access.yml) | Credential Access | Medium |
+| [After-Hours Brute Force with Scheduled Task](rules/correlated/brute_force_success_with_scheduled_task/brute_force_success_with_scheduled_task.yml) | Credential Access, Persistence, Defense Evasion | High |
+| [Pass the Ticket](rules/lateral-movement/pass_the_ticket.yml) | Lateral Movement | High |
+| [LSASS to Pass the Ticket](rules/correlated/lsass_to_pass_the_ticket/lsass_to_pass_the_ticket.yml) | Credential Access, Lateral Movement | Critical |
 ## Status
 This is a living repository, updated as new detection use cases are developed.
 
