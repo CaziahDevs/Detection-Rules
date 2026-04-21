@@ -1,6 +1,6 @@
 title: Brute Force Success with Scheduled Task - After Hours
 status: experimental
-description: Detects potential defense evasion via after-hours brute force login followed by scheduled task creation
+description: Detects potential multi-tactic via after-hours brute force login followed by scheduled task creation
 tags:
     - attack.credential_access
     - attack.persistence
