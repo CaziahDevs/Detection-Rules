@@ -1,0 +1,24 @@
+title: Brute Force Success with Scheduled Task - After Hours
+status: experimental
+description: Detects potential defense evasion via after-hours brute force login followed by scheduled task creation
+tags:
+    - attack.credential_access
+    - attack.persistence
+    - attack.defense_evasion
+
+detection:
+    condition: login_failures and login_success and scheduled_task
+    login_failures:
+        EventID: 4625
+        count: >= 5
+        timeframe: 10m
+    login_success:
+        EventID: 4624
+    scheduled_task:
+        EventID: 4698
+
+timeframe: 30m
+falsepositives:
+    - Known admin maintenance windows
+    - International employees
+level: high
