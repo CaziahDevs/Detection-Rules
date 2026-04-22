@@ -22,5 +22,18 @@ Rules are organized by tactic and include documentation covering:
 ## Status
 This is a living repository, updated as new detection use cases are developed.
 
+## Log Sources
+- Firewall — port scans, traffic from blocked countries, access to critical ports, overly permissive rules
+- IPS/IDS — abnormal traffic patterns, known vulnerability exploits, malware downloads
+- WAF — SQL injection, XSS, CSRF, bot traffic
+- Linux — privilege escalation, unauthorized root access, SSH anomalies, changes to /etc/passwd or /etc/shadow
+- Windows — log deletion, Domain Admin group changes, RDP attempts, unauthorized account creation
+- Linux — privilege escalation, unauthorized root access, SSH anomalies, changes to /etc/passwd or /etc/shadow
+- Network devices — insecure protocols like Telnet, policy violations, critical ports going down
+- Endpoint — antivirus quarantine events, EDR threat detections, EPP blocks
+- VPN — after-hours access, impossible travel, unauthorized software in VPN traffic
+- VM Platform — privilege changes, VM creation/deletion, missed backups
+- Vulnerability Management — critical vulns detected, scan failures
+
 ---
 *Mapped to [MITRE ATT&CK](https://attack.mitre.org/)*
